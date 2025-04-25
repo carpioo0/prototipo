@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(37, 169, 245);
+    animation: cambiarcielo 4s linear;
+    animation-iteration-count: 2;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+}
+.montana{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    background: green;
+    border-top-left-radius: 900px;
+    border-top-right-radius: 900px;
+
+}
+
+.sol{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-right: 80px;
+    background: rgb(223, 143, 38);
+    animation: salirsol 4s linear;
+    animation-iteration-count: infinite;
+
+}
+
+.luna{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 1px 1px 200px rgb(255, 247, 200);
+    animation: salirluna 4s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes salirsol{
+    0%{
+        margin-top: -100px;
+        background-color: orange;
+    }
+    100%{
+        margin-bottom: 1000px;
+        background-color: yellow;
+        
+    } 
+}
+
+@keyframes salirluna{
+    0%{
+        margin-bottom: 1000px;
+    }
+    100%{
+        margin-top: -100px;
+    }
+}
+
+@keyframes cambiarcielo{
+    0%{
+        background: rgb(3, 34, 53);
+    }
+    100%{
+        background: rgb(37, 169, 245);
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Inventory</title>
+    <link rel="stylesheet" href="crearsección.css">
+    <link rel="shortcut icon" href="Imagenes/Captura_de_pantalla_2024-10-25_181304-removebg-preview.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="../LandingPage/index1.html" class="Logo">
+        <img src="Imagenes/Captura_de_pantalla_2024-10-25_181304-removebg-preview.png" alt="google">
+    </a>
+
+    <div class="search-bar1">
+        <input type="text" placeholder="Buscar...">
+        <div class="actions">
+            <button><span class="material-icons">mic</span></button>
+            <button><span class="material-icons">search</span></button>
+        </div>
+    </div>
+
+    <div class="icono">
+        <i class="fa-regular fa-user fa-2x"></i>
+    </div>
+
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">HOLY INVENTORY</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar">
+                <button>🔍</button>
+            </div>
+            <div class="inventory">
+                <h3>Bodega A1</h3>
+                <div class="section">
+                    <h4>Sección 001</h4>
+                    <ul class="categories">
+                        <li>Camisas</li>
+                        <li>Pantalones</li>
+                        <li>Calcetines</li>
+                        <li>Calzados</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main content
+        <main class="main-content">
+            <div class="header">
+                <input type="text" placeholder="Search">
+                <div class="profile">👤</div>
+            </div> -->
+            
+            <div class="create-container">
+                <div class="create-item">
+
+                    <div class="icon">+</div>
+                    <p>Crear seccion</p>
+
+                    <div class="input-fields">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="ID">
+                        <input type="text" placeholder="Codigo de Bodega">
+                        
+
+                        <button class="agregar"><a href="">CREAR</a></button>
+                    </div>
+                </div>
+                
+                <div class="contenedor">
+
+                    <div class="recuadro">
+                        <button class="mas" onclick="location.href='principal.html'">+</button>
+                        <p>Crear Bodega</p>
+                    </div>
+
+                    <div class="recuadro">
+                        <button class="mas" onclick="location.href='crearcategoria.html'">+</button>
+                        <p>Crear Categoría</p>
+                    </div>
+
+                    <div class="recuadro">
+                        <button class="mas" onclick="location.href='agregarproducto.html'">+</button>
+                        <p>Agregar Producto</p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
